@@ -32,7 +32,7 @@ def send():
     response = requests.post(url, data=data)
     print(response.content)
     upload_to_dropbox(str(time.ctime()) + ".json", response.content)
-    threading.Timer(28800, send).start()
+    threading.Timer(3600, send).start()
 
 
 send()
