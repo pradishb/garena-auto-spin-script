@@ -1,0 +1,1 @@
+web: python garena-auto-spin.py
